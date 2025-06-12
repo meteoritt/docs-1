@@ -169,5 +169,5 @@ To use the uploaded artifact in a different job, ensure your workflows have the 
           name: {% raw %}<my-app>{% endraw %}
           path: ./{% raw %}<my-app>{% endraw %}
       - name: Publish built binary to {% data variables.product.github %} releases
-      - run: |
+        run: |
           gh release create --generate-notes ./{% raw %}<my-app>/<my-project>#<my-app>{% endraw %}
